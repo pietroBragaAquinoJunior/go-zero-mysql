@@ -1,0 +1,1 @@
+CREATE DATABASE go_zero_mysql_db;

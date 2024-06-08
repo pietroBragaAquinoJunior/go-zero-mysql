@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package zrpc;
+
+option go_package = "./";
+
+message ZrpcRequest {}
+
+message ZrpcResponse {
+  string msg = 1;
+}
+
+service ZrpcService {
+  rpc ZrpcMethod(ZrpcRequest) returns (ZrpcResponse);
+}
