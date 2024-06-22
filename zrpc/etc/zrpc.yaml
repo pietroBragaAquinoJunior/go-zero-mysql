@@ -2,11 +2,11 @@ Name: zrpc.rpc
 ListenOn: 0.0.0.0:8080
 Etcd:
   Hosts:
-  - etcd:2379
+  - 127.0.0.1:2379
   Key: zrpc.rpc
-DataSourceName: "root:172983456@tcp(mysql_databases:3306)/go_zero_mysql_db?parseTime=true"
+DataSourceName: ""
 Cache:
-  - Host: "redis:6379"
+  - Host: ""
     Type: "node"
     Pass: ""
     Tls: false
