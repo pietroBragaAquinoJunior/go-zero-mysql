@@ -46,14 +46,14 @@ services:
     networks:
       - backend
 
-  zrpc:
-    build:
-      context: .
-      dockerfile: ./zrpc/Dockerfile
-    ports:
-      - "8080:8080"
-    networks:
-      - backend
+#  zrpc:
+#    build:
+#      context: .
+#      dockerfile: ./zrpc/Dockerfile
+#    ports:
+#      - "8080:8080"
+#    networks:
+#      - backend
 
 networks:
   backend:
